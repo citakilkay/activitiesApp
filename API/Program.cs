@@ -14,7 +14,7 @@ namespace API
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             //CreateHostBuilder(args).Build().Run();
             var host = CreateHostBuilder(args).Build();
@@ -24,6 +24,7 @@ namespace API
             {
                 var context = services.GetRequiredService<DataContext>();
                 context.Database.Migrate();
+                await Seed.SeedData(context);
             }
             catch (Exception ex)
             {
