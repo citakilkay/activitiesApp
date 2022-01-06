@@ -1,0 +1,31 @@
+$light-gray: #f6f6f6;
+.navbar {
+    &__menu {
+        background-color:  $light-gray !important;
+    }
+    &__subitem {
+        margin-left: 1.5rem !important;
+        padding-left: 0 !important;
+    }
+    &__button {
+        margin-top: 2rem !important;
+    }
+    &__icon {
+        float: left !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    &__icon:before {
+        float: left;
+    }
+    &__item.-align-bottom {
+        margin-top: auto;
+    }
+    &__item.-header {
+        font-weight: bold;
+    }
+    &__item.-center {
+        display: flex !important;
+        justify-content: center;
+    }
+}

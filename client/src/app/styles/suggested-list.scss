@@ -1,0 +1,12 @@
+$light-gray: #f6f6f6;
+.suggested-list {
+    background-color: $light-gray;
+    padding: 1rem !important;
+    &__item {
+        padding: 0.5rem !important;
+    }
+    &__item.-center {
+        display: flex !important;
+        justify-content: center;
+    }
+}
