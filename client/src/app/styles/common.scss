@@ -29,3 +29,16 @@ $light-gray: #f6f6f6;
         justify-content: center;
     }
 }
+.suggested-list {
+    width: 23%;
+    background-color: $light-gray;
+    border-radius: 5px !important;
+    padding: 1rem !important;
+    &__item {
+        padding: 0.5rem !important;
+    }
+    &__item.-center {
+        display: flex !important;
+        justify-content: center;
+    }
+}

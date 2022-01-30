@@ -1,0 +1,17 @@
+.profile-main {
+    margin-top: 2rem !important;
+    .profile-header {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center;
+        flex-direction: column;
+        .profile-following {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .profile-followers {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
